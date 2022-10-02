@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+body {
+    font-family: "Karla", sans-serif;
+    background-color: hsl(218, 22%, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+    main {
+        background-color: hsl(204, 43%, 93%);
+        width: 95%;
+        max-width: 375px;
+        border-radius: 10px;
+        @media (min-width: 768px) {
+            max-width: 635px;
+        }
+
+        .intro {
+            padding: 20px;
+            @media (min-width: 768px) {
+                flex: 1;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                color: hsl(179, 62%, 43%);
+            }
+            h2 {
+                font-size: 1.2rem;
+                color: hsl(71, 73%, 54%);
+            }
+            p {
+                font-size: 1.1rem;
+                color: hsl(218, 22%, 67%);
+            }
+        }
+        .wrapper {
+            color: hsl(204, 43%, 93%);
+            @media (min-width: 768px) {
+                display: flex;
+            }
+
+            .subs {
+                padding: 20px;
+                background-color: hsl(179, 62%, 43%);
+                @media (min-width: 768px) {
+                    flex: 1;
+                    padding: 40px;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    margin-top: 0;
+                }
+                h4 {
+                    margin: 0;
+                    font-size: 3rem;
+                    span {
+                        font-size: 1rem;
+                        vertical-align: middle;
+                        color: hsl(179, 53%, 63%);
+                    }
+                }
+                p {
+                    margin-top: 0;
+                    font-size: 1.2rem;
+                    color: hsl(178, 68%, 79%);
+                }
+
+                input {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    width: 100%;
+                    padding: 10px;
+                    color: hsl(0, 0%, 100%);
+                    background-color: hsl(71, 73%, 54%);
+                    text-align: center;
+                    border: 0;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                }
+            }
+            .whyUs {
+                padding: 20px;
+                background-color: hsl(179, 47%, 52%);
+                @media (min-width: 768px) {
+                    flex: 1;
+                    padding: 40px;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    margin-top: 0;
+                }
+                li {
+                    font-size: 1.2rem;
+                    color: hsl(178, 68%, 79%);
+                }
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    footer {
+        position: fixed;
+        bottom: 10px;
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
