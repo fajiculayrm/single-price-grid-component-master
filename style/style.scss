@@ -1,0 +1,123 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-font;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "intro"
+            "subs"
+            "whyUs";
+        background-color: $white;
+        width: min(95%, 23.4375rem);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        @media (min-width: 768px) {
+            width: 39.6875rem;
+            grid-template-areas:
+                "intro intro"
+                "subs whyUs";
+        }
+    }
+
+    .intro {
+        grid-area: intro;
+        padding: 2rem;
+    }
+
+    .intro h1 {
+        color: $highlight2;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .intro h2 {
+        color: $highlight1;
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .intro p {
+        color: $primary;
+        line-height: 2rem;
+    }
+
+    .subs {
+        color: $white;
+        grid-area: subs;
+        padding: 2rem;
+        background-color: $highlight2;
+        backdrop-filter: brightness(0.85);
+    }
+
+    .subs h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .subs h4 {
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        color: $secondary;
+    }
+
+    .subs h4 span {
+        font-size: 2.5rem;
+        font-weight: 700;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+    }
+
+    .subs input {
+        background-color: $highlight1;
+        border: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 0.5em;
+        color: $white;
+        margin-top: 2rem;
+    }
+
+    .whyUs {
+        color: $white;
+        grid-area: whyUs;
+        padding: 2rem;
+        background-color: $highlight3;
+    }
+
+    .whyUs h3 {
+        font-size: 1.2rem;
+    }
+
+    .whyUs ul {
+        list-style: none;
+        margin-top: 1rem;
+    }
+
+    .whyUs li {
+        color: $secondary;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}

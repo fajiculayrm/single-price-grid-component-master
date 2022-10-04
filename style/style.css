@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(218deg, 22%, 67%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body main {
+  display: grid;
+  grid-template-areas: "intro" "subs" "whyUs";
+  background-color: hsl(0deg, 100%, 100%);
+  width: min(95%, 23.4375rem);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  body main {
+    width: 39.6875rem;
+    grid-template-areas: "intro intro" "subs whyUs";
+  }
+}
+body .intro {
+  grid-area: intro;
+  padding: 2rem;
+}
+body .intro h1 {
+  color: hsl(179deg, 62%, 43%);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+body .intro h2 {
+  color: hsl(71deg, 73%, 54%);
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+body .intro p {
+  color: hsl(218deg, 22%, 67%);
+  line-height: 2rem;
+}
+body .subs {
+  color: hsl(0deg, 100%, 100%);
+  grid-area: subs;
+  padding: 2rem;
+  background-color: hsl(179deg, 62%, 43%);
+  -webkit-backdrop-filter: brightness(0.85);
+          backdrop-filter: brightness(0.85);
+}
+body .subs h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+body .subs h4 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: hsl(204deg, 43%, 93%);
+}
+body .subs h4 span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+body .subs input {
+  background-color: hsl(71deg, 73%, 54%);
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  color: hsl(0deg, 100%, 100%);
+  margin-top: 2rem;
+}
+body .whyUs {
+  color: hsl(0deg, 100%, 100%);
+  grid-area: whyUs;
+  padding: 2rem;
+  background-color: hsl(179deg, 47%, 52%);
+}
+body .whyUs h3 {
+  font-size: 1.2rem;
+}
+body .whyUs ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+body .whyUs li {
+  color: hsl(204deg, 43%, 93%);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
